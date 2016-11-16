@@ -40,3 +40,10 @@ $(function() {
         }
     }
 });
+
+$(function (){
+    window.PLOTLYENV={'BASE_URL': 'https://plot.ly'};
+    registerPlotlyjsTransforms(Plotly);
+            
+    Plotly.newPlot("3820c444-2344-4358-8b7c-73f5abbedc4d",  figure.data, figure.layout, {"mapboxAccessToken": "pk.eyJ1IjoiY2hyaWRkeXAiLCJhIjoiY2lxMnVvdm5iMDA4dnhsbTQ5aHJzcGs0MyJ9.X9o_rzNLNesDxdra4neC_A", "linkText": "Export to plot.ly", "showLink": true})
+})
